@@ -1,5 +1,6 @@
 parameters: {}
-environment: {}
+environment:
+  LOG_DESTINATIONS: ${LOG_DESTINATIONS}
 packages:
   - name: sample
     shared: false
