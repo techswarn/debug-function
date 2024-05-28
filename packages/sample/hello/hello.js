@@ -1,4 +1,4 @@
-async function main(event, context) {
+function main(event, context) {
   console.log(`---------EVENT----------`);
   console.log(event);
   console.log(`---------CONTEXT--------`);
