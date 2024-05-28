@@ -20,7 +20,7 @@ function main(event, context) {
   //   return { body: { success: false, data: err }, headers: { foo: "bar" } };
   // }
 
-  return { body: { success: false, data: "Working" }, headers: { foo: "bar" } };
+  return { body: "greeting" };
 }
 
 exports.main = main;
