@@ -1,9 +1,8 @@
 parameters: {}
+environment:
+  LOG_DESTINATIONS: ${LOG_DESTINATIONS}
 packages:
   - name: sample
-    environment:
-      LOG_DESTINATIONS: ${LOG_DESTINATIONS}
-      FOO: ${FOO}
     functions:
       - name: hello
         runtime: "nodejs:default"
