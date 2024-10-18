@@ -3,7 +3,18 @@ environment:
   LOG_DESTINATIONS: ${LOG_DESTINATIONS}
 packages:
   - name: sample
+    shared: false
+    environment: {}
+    parameters: {}
+    annotations: {}
     functions:
       - name: hello
-        runtime: "nodejs:default"
+        runtime: nodejs:18
+        main: ""
+        web: raw
+        binary: false
+        webSecure: false
+        parameters: {}
+        environment: {}
+        annotations: {}
         limits: { timeout: 120000 }
