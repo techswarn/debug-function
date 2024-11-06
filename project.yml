@@ -11,7 +11,7 @@ packages:
       - name: hello
         runtime: nodejs:18
         main: ""
-        web: raw
+        web: true
         binary: false
         webSecure: false
         parameters: {}
