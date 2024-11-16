@@ -10,10 +10,9 @@ packages:
     functions:
       - name: hello
         runtime: nodejs:18
-        main: ""
+        main: "hello.js"
         web: true
         binary: false
-        webSecure: false
         parameters: {}
         environment: {}
         annotations: {}
