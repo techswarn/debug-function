@@ -1,15 +1,5 @@
 function main(event, context) {
-  console.log(`---------EVENT----------`);
-  console.log(event);
-  console.log(`---------CONTEXT--------`);
-  console.log(context);
-
-  return {
-    body: {
-      "Event data": event,
-      "Context data": context,
-    },
-  };
+    return {
+      body: [{event: event}, {context: context}]
+    }
 }
-
-exports.main = main;
